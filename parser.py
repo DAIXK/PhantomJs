@@ -17,8 +17,8 @@ def get_cookies():
     url = 'https://aso100.com/account/signin'
     drive = webdriver.PhantomJS(service_args=['--ssl-protocol=any'])
     drive.get(url)
-    drive.find_element_by_id('username').send_keys('13632918420')
-    drive.find_element_by_id('password').send_keys('SK201314')
+    drive.find_element_by_id('username').send_keys('yourname')
+    drive.find_element_by_id('password').send_keys('yourpwd')
     drive.save_screenshot('aso100.png')
     code = input('请输入验证码>>>>')
     drive.find_element_by_id('code').send_keys(code)
